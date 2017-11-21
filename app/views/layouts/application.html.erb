@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flightvr</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'aframe.min.js' %>
+  </head>
+
+  <body>
+  	<div class="container">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<%=
+				if current_page?(root_path)
+					link_to "Home", '/', :'class' => "nav-link active"
+				else
+					link_to "Home", '/', :'class' => "nav-link"
+				end
+				%>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Flightstats</a>
+			</li>
+			<li class="nav-item">
+				<%=
+				if current_page?(vrmode_path)
+					link_to "VR Mode", '/vrmode', :"data-turbolinks" => false, :'class' => "nav-link active"
+				else
+					link_to "VR Mode", '/vrmode', :"data-turbolinks" => false, :'class' => "nav-link"
+				end
+				%>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Account</a>
+			</li>
+		</ul>
+    	<%= yield %>
+    </div>
+  </body>
+</html>
