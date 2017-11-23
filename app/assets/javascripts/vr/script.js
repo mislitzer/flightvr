@@ -193,19 +193,6 @@ function getColor(country) {
 	return typeof colors[country] != "undefined" ? colors[country] : colors["default"];
 }
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        console.log("Geolocation is not supported by this browser.");
-    }
-}
-
-function showPosition(position) {
-    console.log("Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude); 
-}
-
 function registerPopupEvents() {
 	jq("body").on("click", "#vrModal .selecting button", function() {
 		var content = jq(this).text();
