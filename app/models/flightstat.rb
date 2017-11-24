@@ -1,0 +1,2 @@
+class Flightstat < ApplicationRecord
+end

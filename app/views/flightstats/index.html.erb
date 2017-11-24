@@ -1,0 +1,3 @@
+<h1>Flightstats</h1>
+<%= content_tag "div", id: "flightstat-items", data: {url: Flightstat.order('created_at ASC') } do %>
+<% end %>

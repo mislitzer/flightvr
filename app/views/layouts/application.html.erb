@@ -22,7 +22,13 @@
 				%>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Flightstats</a>
+				<%=
+				if current_page?(flightstats_path)
+					link_to "Flightstats", '/flightstats', :"data-turbolinks" => false, :'class' => "nav-link active"
+				else
+					link_to "Flightstats", '/flightstats', :"data-turbolinks" => false, :'class' => "nav-link"
+				end
+				%>
 			</li>
 			<li class="nav-item">
 				<%=
