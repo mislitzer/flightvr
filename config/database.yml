@@ -25,4 +25,6 @@ test:
 
 production:
   <<: *default
-  database: workspace_development
+  database: flightvr_production
+  username: ubuntu
+  password: <%= ENV['FLIGHTVR_DATABASE_PASSWORD'] %>
