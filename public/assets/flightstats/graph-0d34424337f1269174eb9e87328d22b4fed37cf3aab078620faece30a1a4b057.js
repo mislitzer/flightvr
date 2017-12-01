@@ -127,3 +127,4 @@ if (window.location.href.indexOf("/flightstats") != -1) {
        loadData();
     });
 }
+;
