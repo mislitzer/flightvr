@@ -17,6 +17,7 @@ gem 'aframe-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'bcrypt', '3.1.11'
+gem 'highcharts-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -40,9 +40,6 @@
 				%>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
-			</li>
-			<li class="nav-item">
 				<%=
 				if current_page?(login_path) || current_page?(signup_path)
 					link_to "Login", '/login', :"data-turbolinks" => true, :'class' => "nav-link active"

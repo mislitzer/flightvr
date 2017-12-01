@@ -9,6 +9,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( aframe.min.js )
 Rails.application.config.assets.precompile += %w( vr/script.js )
+Rails.application.config.assets.precompile += %w( flightstats/graph.js )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets

@@ -1,3 +1,4 @@
 <h1>Flightstats</h1>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <%= content_tag "div", id: "flightstat-items", data: {url: Flightstat.order('created_at ASC') } do %>
 <% end %>
